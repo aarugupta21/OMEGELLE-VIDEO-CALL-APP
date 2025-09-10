@@ -1,0 +1,24 @@
+{
+  "name": "omegelle-video-call-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/output.css --watch",
+    "chacha": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.12"
+  }
+}

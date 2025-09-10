@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Stranger Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 h-screen flex items-center justify-center">
+  <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold text-blue-600 mb-6">👋 Welcome to Yaari app.</h1>
+
+    <!-- Username Input -->
+    <form action="/chat" method="GET" class="flex flex-col gap-4">
+      <input type="text" name="username" placeholder="Enter your name"
+        class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none" required>
+
+      <select name="mode" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none">
+        <option value="chat">💬 Chat Only</option>
+        <option value="video">📹 Chat + Video Call</option>
+      </select>
+
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        Start
+      </button>
+    </form>
+  </div>
+</body>
+</html>
